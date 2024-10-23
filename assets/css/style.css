@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Глобальные стили */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Толщина текста */
+
+.f-14 {
+    font-size: 0.875rem;
+}
+
+.f-16 {
+    font-size: 1rem;
+}
+
+.f-18 {
+    font-size: 1.125rem;
+}
+
+.f-24 {
+    font-size: 1.5rem;
+}
+
+.f-36 {
+    font-size: 2.25rem;
+}
+
+.f-48 {
+    font-size: 3rem;
+}
+
+.f-64 {
+    font-size: 4rem;
+}
+
+.f-72 {
+    font-size: 4.5rem;
+}
+
+.f-200 {
+    font-size: 12.5rem;
+}
+
+/* Цвет текста */
+
+.c-white {
+    color: white;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-dark-sea {
+    color: #0D302C;
+}
+
+.c-emerald {
+    color: #00B2A0;
+}
+
+.c-dark-emerald {
+    color: #01353E;
+}
+
+.c-gray {
+    color: #242121;
+}
+
+/* Шрифты */
+
+.roboto-condensed-400, .roboto-condensed-300, .roboto-condensed-700 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.roboto-condensed-700 {
+    font-weight: 700;
+}
+
+.roboto-condensed-400 {
+    font-weight: 400;
+}
+
+.roboto-condensed-300 {
+    font-weight: 300;
+}
+
+.raleway-600, .raleway-700 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal; 
+}
+
+.raleway-600 {
+    font-weight: 600;
+}
+
+.raleway-700 {
+    font-weight: 700;
+}
+
+/* Общие стили элементов */
+
+.header-content, .header-content nav, .main-block_content, .you-will-receive_content-service > div, .about-school_content-text, .about-school_content-text div, .you-will-receive_content-services1, .you-will-receive_content-service, .you-will-receive_content-stat div, .you-will-receive_content-services2, .you-will-receive_content-text, .conquer-the-peaks, .conquer-the-peaks_content-text, .gallery-content, .gallery-content_nav, .quote_content, .indicators_content, .indicators_content div, .vlog_content_nav, .our-team_content-card, .our-team_content-card div, .services, .service, .service > div { /* display: flex */
+    display: flex;
+}
+
+.header-content nav, .about-school_content-text div, .you-will-receive_content-services1, .you-will-receive_content-service, .you-will-receive_content-services2, .conquer-the-peaks, .conquer-the-peaks_content-text, .gallery-content_nav, .indicators_content, .our-team_content-card, .services { /* justify-content: space-between */
+    justify-content: space-between;
+}
+
+.header-content, .header-content nav, .main-block_content, .you-will-receive_content-service, .you-will-receive_content-service > div, .you-will-receive_content-services2, .gallery-content, .indicators_content div, .our-team_content-card, .our-team_content-card div, .service { /* align-items: center */
+    align-items: center;
+}
+
+.main-block_content, .about-school_content-text div, .you-will-receive_content-service, .you-will-receive_content-text, .conquer-the-peaks_content-text, .gallery-content, .quote_content, .indicators_content div, .our-team_content-card div, .service, .service > div     { /* flex-direction: column */
+    flex-direction: column;
+}
+
+.main-block_content { /* justify-content: center */
+    justify-content: center;
+}
+
+.you-will-receive_content-service > div, .you-will-receive_content-stat > div { /* gap: 10px */
+    gap: 10px;
+}
+
+.title-block span { /* vertical-align: text-top */
+    vertical-align: text-top;
+}
+
+.you-will-receive_content > p, .gallery-content > p, .our-team_content > p, .service-package_content > p { /* text-align: center */
+    text-align: center;
+}
+
+.main-block, 
+.conquer-the-peaks_img, .vlog {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Стили элементов */
+
+header {
+    position: absolute;
+    width: 100%;
+    padding-top: 35px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content img {
+    margin-right: 185px;
+}
+
+.header-content nav {
+    width: 710px;
+}
+
+.main-block {
+    background-image: url("../img/main-bg.png");
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-block_content {
+    height: 100%;
+}
+
+.about-school {
+    padding: 189px 0 199px;
+}
+
+.about-school_content-title {
+    text-align: end;
+    margin: 64px;
+}
+
+.about-school_content-text {
+    gap: 120px;
+}
+
+.about-school_content-text div {
+    height: 422px;
+}
+
+.about-school_content-text div p {
+    width: 480px;
+}
+
+.you-will-receive {
+    background-color: #F8F8F8;
+    padding: 200px 0;
+}
+
+.you-will-receive_content-services1 {
+    margin: 101px 0;
+}
+
+.you-will-receive_content-service {
+    width: 350px;
+    height: 137px;
+}
+
+.you-will-receive_content-service > p {
+    letter-spacing: 0.6px;
+}
+
+.you-will-receive_content-text {
+    width: 600px;
+    gap: 30px;
+}
+
+.conquer-the-peaks {
+    height: 850px;
+}
+
+.conquer-the-peaks_img {
+    width: 50vw;
+    height: 850px;
+    background-image: url("../img/bg1.png");
+    position: absolute;
+    right: 0;
+}
+
+.conquer-the-peaks_content {
+    height: fit-content;
+    margin-top: 200px;
+    margin-bottom: auto;
+}
+
+.conquer-the-peaks_content > p {
+    margin-bottom: 100px;
+}
+
+.conquer-the-peaks_content-text {
+    width: 507px;
+    height: 347px;
+}
+
+.gallery {
+    margin-top: 199px;
+    margin-bottom: 200px;
+}
+
+.gallery-content > p {
+    margin-bottom: 212px;
+}
+
+.gallery-content_nav {
+    width: 394px;
+    margin-bottom: 50px;
+    align-self: self-start;
+}
+
+.gallery-content_nav p {
+    cursor: pointer;
+}
+
+.gallery-content_imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.gallery-content_imgs img:first-child {
+    grid-column: span 2;
+}
+
+.gallery-content_imgs img:last-child {
+    grid-column: span 2;
+}
+
+.gallery-content > button {
+    background-color: rgba(0, 0, 0, 0);
+    width: 350px;
+    height: 70px;
+    border: 1px solid #C4C4C4;
+}
+
+.quote {
+    background-color: #F8F8F8;
+    padding-top: 81px;
+    padding-bottom: 62px;
+}
+
+.quote_content {
+    width: fit-content;
+    align-items: flex-end;
+}
+
+.quote_content q {
+    font-style: italic;
+}
+
+.video, .our-team {
+    padding: 200px 0;
+}
+
+.indicators {
+    padding-bottom: 198px;
+}
+
+.indicators_content div {
+    gap: 5px;
+}
+
+.our-team_content > p {
+    margin-bottom: 183px;
+}
+
+.vlog {
+    background-image: url("../img/vlog/bg.png");
+    padding-bottom: 77px;
+    padding-top: 314px;
+}
+
+.vlog_content > div:first-child {
+    margin-left: 50%;
+    margin-bottom: 259px;
+}
+
+.vlog_content_nav {
+    gap: 15px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.circle:first-child {
+    background-color: #00B2A0;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.our-team_content-card div p:nth-child(2) {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+
+.service-package {
+    background-color: #F8F8F8;
+    padding: 200px 0;
+}
+
+.service-package_content > p {
+    margin-bottom: 183px;
+}
+
+.service {
+    width: 360px;
+    height: 577px;
+    padding: 45px 43px;
+    background-color: white;
+}
+
+.service > p:first-child {
+    margin-bottom: 58px;
+}
+
+.service > div {
+    gap: 20px;
+    height: 284px;
+    align-self: start;
+    margin-bottom: auto;
+}
+
+.service p:last-child {
+    height: fit-content;
+}
+
+.services {
+
+}
